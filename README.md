@@ -57,4 +57,15 @@ pip install numpy matplotlib
 ```
 
 Run the script with:
+
 python pgaAnalysis.py
+
+
+## Sample Outputs
+
+### Histogram
+![Histogram of PGA](histogram.png)
+
+### CDF
+![CDF of PGA](cdf.png)
+
