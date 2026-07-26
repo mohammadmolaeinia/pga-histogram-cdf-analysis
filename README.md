@@ -54,6 +54,7 @@ It also generates:
 Make sure Python is installed, then install the required libraries if needed:
 ```bash
 pip install numpy matplotlib
+```
 
 Run the script with:
 python pgaAnalysis.py
