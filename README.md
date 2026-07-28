@@ -49,17 +49,18 @@ It also generates:
 - a histogram of PGA frequencies and proportions
 - a CDF plot of PGA values
 
-## How to Run
+## Requirements
 
-Make sure Python is installed, then install the required libraries if needed:
+Install the required libraries using:
 ```bash
-pip install numpy matplotlib
+pip install -r requirements.txt
 ```
 
-Run the script with:
-
+## How to Run
+Run the Python script with:
+```bash
 python pgaAnalysis.py
-
+```
 
 ## Sample Outputs
 
