@@ -2,9 +2,10 @@
 
 Statistical analysis and visualization of Peak Ground Acceleration (PGA) data using manually implemented formulas — no reliance on NumPy statistical functions.
 
-## Overview
-
-This project reads PGA values from a text file and computes all statistical measures from scratch using direct mathematical formulas. The goal is to demonstrate a clear, formula-first implementation rather than calling library abstractions.
+## Problem Statement
+Write a python code that for the PGA file provided, make plot histogram and CDF of PGA.
+Which PGA values have the more frequency? Calculate mean, range, standard deviation and skewness of PGA values as well and make
+discussion about these values.
 
 ## Project Files
 
@@ -19,7 +20,9 @@ This project reads PGA values from a text file and computes all statistical meas
 
 ## Method Summary
 
-All statistics are implemented manually:
+1. This project reads PGA values from a text file.
+2. computes all statistical measures from scratch using direct mathematical formulas.
+3. The goal is to demonstrate a clear, formula-first implementation rather than calling library abstractions. So all statistics are implemented manually:
 
 - **Mean**: $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
 - **Range**: $R = x_{\max} - x_{\min}$
