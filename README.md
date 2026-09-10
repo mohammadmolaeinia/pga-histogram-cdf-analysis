@@ -1,66 +1,54 @@
-# pga-histogram-cdf-analysis
+# PGA Histogram & CDF Analysis
 
-Python project for statistical analysis and visualization of PGA data using histogram and CDF plots.
+Statistical analysis and visualization of Peak Ground Acceleration (PGA) data using manually implemented formulas — no reliance on NumPy statistical functions.
 
 ## Overview
 
-This project analyzes a provided PGA dataset and computes the main statistical measures manually from their mathematical formulas rather than relying on NumPy built-in statistical functions.
+This project reads PGA values from a text file and computes all statistical measures from scratch using direct mathematical formulas. The goal is to demonstrate a clear, formula-first implementation rather than calling library abstractions.
 
-The script:
-- reads PGA values from `pga.txt`
-- computes the number of data points
-- computes the mean
-- computes the range
-- computes the sample standard deviation
-- computes the skewness
-- builds a histogram using manually defined bins
-- identifies the PGA interval with the highest frequency
-- computes and plots the cumulative distribution function (CDF)
+## Project Files
 
-## Files
-
-- `pgaAnalysis.py` — main Python script for analysis and plotting
-- `pga.txt` — input file containing PGA values
+| File | Description |
+|------|-------------|
+| `pgaAnalysis.py` | Main script for computation and plotting |
+| `pga.txt` | Input file containing PGA values (one per line) |
+| `question.txt` | text version of the assignment |
+| `requirements.txt` | Python dependencies |
 
 ## Methods
 
-The statistical values are calculated manually in the code using direct formulas:
+All statistics are implemented manually:
 
-- Mean
-- Range
-- Sample standard deviation
-- Skewness
-- Relative frequency
-- Cumulative frequency / CDF
+- **Mean**: $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$
+- **Range**: $R = x_{\max} - x_{\min}$
+- **Sample standard deviation**: $s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}}$
+- **Skewness**: $\gamma = \frac{\frac{1}{n}\sum(x_i - \bar{x})^3}{s^3}$
+- **Relative frequency** and **CDF**: built from manually defined bins
 
-NumPy is only used to load the input data from the text file. The statistical calculations themselves are implemented manually.
-
-## Output
-
-The script prints the following results in the terminal:
-- number of PGA values
-- mean
-- standard deviation
-- range
-- skewness
-- interval with the highest frequency
-
-It also generates:
-- a histogram of PGA frequencies and proportions
-- a CDF plot of PGA values
+NumPy is used only to load data from `pga.txt`.
 
 ## Requirements
 
-Install the required libraries using:
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ## How to Run
-Run the Python script with:
-```bash
+
+```
 python pgaAnalysis.py
 ```
+
+## Output
+
+**Terminal output:**
+- Number of PGA values ($n$)
+- Mean, standard deviation, range, skewness
+- Interval with highest frequency
+
+**Plots generated:**
+- Histogram of PGA frequencies and proportions
+- Cumulative Distribution Function (CDF)
 
 ## Sample Outputs
 
@@ -69,4 +57,3 @@ python pgaAnalysis.py
 
 ### CDF
 ![CDF of PGA](cdf.png)
-
