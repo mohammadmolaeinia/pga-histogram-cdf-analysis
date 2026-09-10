@@ -17,7 +17,7 @@ This project reads PGA values from a text file and computes all statistical meas
 | `cdf.png` | output CDF plot generated |
 | `histogram.png` | output Histogram plot generated |
 
-## Methods
+## Method Summary
 
 All statistics are implemented manually:
 
@@ -59,3 +59,7 @@ python pgaAnalysis.py
 
 ### CDF
 ![CDF of PGA](cdf.png)
+
+## Notes
+
+- This project was developed as part of an academic exercise related to uncertainty modeling, fuzzy variables, and probabilistic simulation in engineering applications.
