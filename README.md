@@ -14,6 +14,8 @@ This project reads PGA values from a text file and computes all statistical meas
 | `pga.txt` | Input file containing PGA values (one per line) |
 | `question.txt` | text version of the assignment |
 | `requirements.txt` | Python dependencies |
+| `cdf.png` | output CDF plot generated |
+| `histogram.png` | output Histogram plot generated |
 
 ## Methods
 
