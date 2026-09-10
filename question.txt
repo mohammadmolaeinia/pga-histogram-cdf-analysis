@@ -1,0 +1,6 @@
+Problem Statement
+
+Write a python code that for the PGA file provided, make plot histogram and CDF of PGA.
+Which PGA values have the more frequency?
+Calculate mean, range, standard deviation and skewness of PGA values as well and make
+discussion about these values.
